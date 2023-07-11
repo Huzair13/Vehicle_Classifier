@@ -1,11 +1,6 @@
 public class Main {
     public static void main(String[] args) {
 
-        //Vehicles object instance is created
-        Vehicle vehicle=new Vehicle();
-        vehicle.start();
-        vehicle.stop();
-
         //Car object instances is created
         Car car=new Car();
         car.start();
@@ -20,17 +15,13 @@ public class Main {
 }
 
 //Vehicle Entity
-class Vehicle{
+abstract class Vehicle{
 
     //Start Method
-    public void start(){
-        System.out.println("Vehicle Started");
-    }
+    public abstract void start();
 
     //Stop Method
-    public void stop(){
-        System.out.println("Vehicle stopped");
-    }
+    public abstract void stop();
 }
 
 //Car Entity
